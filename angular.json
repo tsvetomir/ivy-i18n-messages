@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ivy-i18n": {
@@ -28,6 +28,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "src/styles.scss"
             ],
             "scripts": []
@@ -60,6 +63,13 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "es": {
+              "aot": true,
+              "outputPath": "dist/ivy-i18n/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es"
             }
           }
         },
@@ -71,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "ivy-i18n:build:production"
+            },
+            "es": {
+              "browserTarget": "ivy-i18n:build:es"
             }
           }
         },
@@ -92,6 +105,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +139,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ivy-i18n"
 }
