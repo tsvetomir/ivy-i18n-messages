@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ivy-i18n",
+            "outputPath": "dist/ivy-i18n-messages",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,7 +66,7 @@
             },
             "es": {
               "aot": true,
-              "outputPath": "dist/ivy-i18n/",
+              "outputPath": "dist/ivy-i18n-messages/",
               "i18nFile": "src/locale/messages.es.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "es"
